@@ -11,3 +11,47 @@
     
     It can help catch errors at compile-time instead of runtime.
 */
+
+/*
+    Used for:
+
+    - A function that always throws an error
+    - A function that has an infinite loop
+    - A variable that can never have a value
+*/
+
+// 1. A function that always throws an error
+
+function throwError(msg: string): never {
+  // Wrong syntax:
+  // return throw new Error(msg);
+  throw new Error(msg);
+}
+
+// 2. A function that has an infinite loop
+
+function infiniteLoop(): never {
+  while (true) {
+    // code
+  }
+}
+
+// 3. A variable that can never have a value
+
+let x: never;
+
+/*
+
+*/
+
+function neverReturns(): never {
+  throw new Error("Error");
+}
+
+// Error:
+/*
+    Editor will not show error but when this line will run
+    then it will cause the compile time error
+    because the function never returns.
+*/
+// x = neverReturns();
