@@ -7,7 +7,7 @@
   For example, let's say you have an object type for a person 
   with name, age, and email properties, but you want to 
   make the email property optional. You can do this by 
-  adding a question mark after the email property:
+  adding a question mark after the email property.
 */
 
 /*
