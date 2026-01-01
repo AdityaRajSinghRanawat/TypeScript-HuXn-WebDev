@@ -50,7 +50,6 @@ printPerson(myPerson);
 // 2 (with "email")
 printPerson({ name: "Aditya", age: 19, email: "xyz@example.com" });
 
-
 // Note:
 /*
   2 Space Tab = for Web Dev      (since too nested)     [JS/TS/HTML/CSS]
