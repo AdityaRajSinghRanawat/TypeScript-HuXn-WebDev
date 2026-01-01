@@ -26,6 +26,8 @@ type PersonAndEmployee = Person & Employee;
   rohan: for Object
 */
 // this is a object instance
+
+// we must include all the properties in "Intersection Type"
 const rohan: PersonAndEmployee = {
   name: "Rohan",
   age: 23,
